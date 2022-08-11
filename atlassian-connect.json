@@ -4,13 +4,13 @@
 	"key": "com.fioneer.dev57.jiraapp.storydonevalidator",
 	"baseUrl": "https://not-used.fioneer.com",
 	"vendor": {
-		"name": "Fioneer",
+		"name": "SAP Fioneer",
 		"url": "https://fioneer.com"
 	},
 	"authentication": {
 		"type": "none"
 	},
-	"apiVersion": 2,
+	"apiVersion": 1,
 	"modules": {
 		"jiraWorkflowValidators": [
 			{
