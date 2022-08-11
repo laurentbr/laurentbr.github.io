@@ -1,0 +1,31 @@
+{
+	"name": "Fioneer Eng Dev57 Story Done Validator",
+	"description": "Fioneer NickPan Custom Validator app | 'view': {'url': '/view'},'edit': {'url': '/edit'},'create': {'url': '/create'}",
+	"key": "com.fioneer.nickpan.customval",
+	"baseUrl": "https://62e6-72-141-101-248.ngrok.io",
+	"vendor": {
+		"name": "Fioneer NickPan",
+		"url": "http://fioneer.com"
+	},
+	"authentication": {
+		"type": "none"
+	},
+	"apiVersion": 1,
+	"modules": {
+		"jiraWorkflowValidators": [
+			{
+				"description": {
+					"value": "Story must have the required subtasks, all with a resolved status."
+				},
+				"expression": "issue.subtasks.some( i => i.issueType.name == 'Sub-task' && i.status.name.toUpperCase() == 'DONE' )",
+				"errorMessage": {
+					"value": "Issue must have at least one subtask of type 'Sub-task' that is in DONE status."
+				},
+				"name": {
+					"value": "Fioneer Eng Dev57 Story Done Validator"
+				},
+				"key": "workflow-validator-example"
+			}
+		]
+	}
+}
